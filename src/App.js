@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import DashboardController from './components/dashboard.controller.js';
+//////////////////////////////////////////////////
+///////////// Dependencies
 
+//////////////////////////////////////////////////
+///////////// Styling for the component
+
+/* Class App, the root component for the whole app
+ * 
+ *
+ * Exported as App
+ *
+ */
 class App extends Component {
+
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <div>
+        <div>
+          <h2 className="App">BabyMac Notebook</h2>
+          <DashboardController />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
       </div>
     );
   }
